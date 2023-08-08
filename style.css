@@ -1,0 +1,110 @@
+/* font-family: 'Tektur', cursive;    ₿ */
+* {
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box;
+  font-family: "Tektur", cursive;
+}
+
+body {
+  background-image: url("assets/panther-converter.jpg");opacity: 0.9;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo-money {
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 20px auto;
+}
+
+main {
+  width: 375px;
+  border-radius: 20px;
+  background: #f4f4f4;
+  margin: 0 auto;
+  padding: 44px 24px 23px;
+}
+
+label {
+  color: #777;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+select,input {
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  background: #fff;
+  height: 48px;
+  width: 100%;
+  margin-bottom: 24px;
+  padding-left: 18px;
+  color: #555;
+  font-size: 16px;
+  font-weight: 700;
+  outline-style: hidden;
+  appearance: none;
+  cursor: pointer;
+}
+
+input {
+    cursor:text;
+}
+
+button {
+  border-radius: 5px;
+  background:#13cc60f8;
+  width: 100%;
+  height: 48px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+section {
+    border: 1px solid #44cf03;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow-img {
+    margin: 15px;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currency {
+    font-size: 14px;
+    color: #777;
+}
+
+.currency-value, .currency-value-to-convert {
+    color: #555;
+    font-size: 20px;
+    font-weight: 700;
+}
