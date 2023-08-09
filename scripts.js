@@ -41,7 +41,7 @@ function convertValues(){
         currencyValueConverted.innerHTML = new Intl.NumberFormat("gbp-UK", {
             style: "currency",
             currency: "GBP"
-        }).format(inputCurrencyValue / bitcoinToday)
+        }).format(inputCurrencyValue / libraToday)
     }
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {          //Esse é o modelo de  código para formatar o número
