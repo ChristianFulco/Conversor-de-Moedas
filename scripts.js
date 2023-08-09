@@ -12,6 +12,8 @@ function convertValues(){
     console.log(currencySelect.value)
     const dollarToday = 5.2
     const euroToday = 6.2
+    const bitcoinToday = 146.271
+    const libraToday = 6.25
 
 
     if(currencySelect.value == "dollar"){ //Se o select estiver selecionado o valolr de dolar, entre aqui
@@ -19,14 +21,27 @@ function convertValues(){
             style: "currency",
             currency: "USD"
         }).format(inputCurrencyValue / dollarToday)
-
     }
+    
     if(currencySelect.value == "euro"){
         currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "EUR"
         }).format(inputCurrencyValue / euroToday)
+    }
 
+    if(currencySelect.value == "bitcoin"){
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("btc-US", {
+            style: "currency",
+            currency: "BTC"
+        }).format(inputCurrencyValue / bitcoinToday)
+    }
+
+    if(currencySelect.value == "libra"){
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("gbp-UK", {
+            style: "currency",
+            currency: "GBP"
+        }).format(inputCurrencyValue / bitcoinToday)
     }
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {          //Esse é o modelo de  código para formatar o número
@@ -48,6 +63,16 @@ function convertValues(){
         if (currencySelect.value == "euro"){
             currencyUSD.innerHTML = "Euro"
             currencyImg.src = "./assets/euro.png"
+        }
+        
+        if (currencySelect.value == "libra"){
+            currencyUSD.innerHTML = "Libra"
+            currencyImg.src = "./assets/libra.png"
+        }
+        
+        if (currencySelect.value == "bitcoin"){
+            currencyUSD.innerHTML = "Bitcoin"
+            currencyImg.src = "./assets/bitcoin.png"
         }
         
         convertValues()
